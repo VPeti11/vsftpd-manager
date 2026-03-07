@@ -118,7 +118,7 @@ func main() {
     http.HandleFunc("/upload", uploadHandler)
 
     log.Println("Serving on :5662")
-    log.Fatal(http.ListenAndServe(":5662", nil))
+    log.Fatal(http.ListenAndServe("127.0.0.1:5662", nil))
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
