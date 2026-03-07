@@ -1,2 +1,2 @@
 # vsftpd-manager
-Scripts for vsftpd
+Scripts and webguis for vsftpd and ftp user management
