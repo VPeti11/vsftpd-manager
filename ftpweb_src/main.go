@@ -262,7 +262,7 @@ func main() {
         http.ServeFile(w, r, target)
     })
 
-    log.Println("Listening on :5663")
-    http.ListenAndServe(":5663", nil)
+    log.Println("Listening on 127.0.0.1:5663")
+    http.ListenAndServe("127.0.0.1:5663", nil)
 }
 
