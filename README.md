@@ -304,7 +304,7 @@ ftpadmin/
 
 scripts/
     setup.sh
-    bulk_users.sh
+    sers.sh
 
 ftpadminweb-nginx.conf
 
@@ -349,14 +349,14 @@ github.com/msteinert/pam
 Build the FTP browser:
 
 ```
-cd ftpweb
+cd ftpweb_src
 go build
 ```
 
 Build the admin service:
 
 ```
-cd ftpadmin
+cd ftpadmin_src
 go build
 ```
 
@@ -367,6 +367,9 @@ go build
 Start the services locally:
 
 ```
+(cd ..)
+cp ftpweb_src/ftpweb ./
+cp ftpadmin_src/ftpweb ./
 ./ftpweb
 ./ftpadmin
 ```
